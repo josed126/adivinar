@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adivinar Numero</title>
+    <!-- aqui vamos a meter el bootstrap,el js y el css -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+    <script src="adivinar_numero.js"></script>
+    <link rel="stylesheet" type="text/css" href="adivinar_numero.css" media="screen" />
+</head>
+
+<body>
+<!-- aqui vamos a poner el tirulo  -->
+    <div id="titulo" class="titulo">
+        <h1>adivina el numero</h1>
+    </div>
+    <div class="pag1" style="display:block">
+<h3>Vamos a jugar al juego del adivinar los numeros del 1 al 100</h3>
+            
+
+  <!-- aqui vamos a crear la lista de la dificultad que quiera el jugador-->            
+        <div id="lista" class="list-responsive" >
+                <h2>Selecciona nº intentos</h2>
+                <select id="intentos" name="Numero_intentos" >
+                    <option value="99">todos los instentos</option>
+                    <option value="50">Mitad de intentos</option>
+                    <option value="20">20 intentos</option>
+                    <option value="10">10 intentos</option>
+                    <option value="5">5 intentos</option>
+                    <option value="3">3 intentos</option>
+                    <option value="0">1 intento "JESUS"</option>
+                </select>
+            </div>
+        <!-- aqui vamos a poner el boton de inicio -->
+            <div id="BotonIniciar" >
+                <a href="#" onclick="iniciarjuego()">Iniciar Juego</a>
+            </div>
+
+           
+            
+        </div>
+
+       <!-- aqui empezamos la segunda pagina -->
+
+        <div id="pag2" class="pag2" style="display:none">
+
+            <!-- aqui ponemos los instentos restantes -->
+
+            <div id="intentos2" style="display:block">
+                <h2><strong>Numero de intentos</strong></h2>
+            <p id="restantes"><strong>0</strong></p>
+            </div>
+
+            
+
+           
+<!--aqui es el inicio del juego -->
+            <div id="juego">
+                <h2><strong>vamos a jugar al adivinador</strong></h2>
+                <p>Introduzca numero: </p>
+                <input type="text" id="number" value="" />
+                <a href="#" class="BtnAgregar" onclick="comprobar()">Comprobar</a>
+                    <p>Resultados:</p>
+                    <div>
+                        <p id="Menor">Números Menores que has utilizado: </p>
+                        <p id="Mayor">Números Mayores que has utilizado: </p>
+                    </div>
+                    <div id="Mensaje" ></div>
+                    <a href="#" class="reinicio" onclick="reiniciarJuego()" style="display:none">Reiniciar Juego</a>
+                </div>
+            </div>
+
+            
+
+            
+        
+
+  
+
+  
+
+   
+</body>
+
+</html>

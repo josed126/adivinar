@@ -1,0 +1,59 @@
+/* aqui vamos a poner la imagen del fondo de la pagina*/
+body { 
+         background-image: url("numeros.png");
+        font-size:20px;
+        }
+
+/* aqui le vamos a dar un borde y un coloer al titulo*/
+#titulo{
+    background-color: palevioletred;
+            text-align: center;
+            padding: 2%;
+            border-top-style: dashed;
+            border-right-style: double;
+            border-bottom-style: dotted;
+            border-left-style: solid;
+    
+}
+/* aqui vamos a dar color al h3*/
+h3 {
+     background-color: gold;
+            text-align: center;
+            padding: 5%;
+            display: inline-flex;
+            padding: 2%;
+           margin-left: 25%;
+}
+#lista {
+    font-family: 'Walter Turncoat', cursive;
+    text-align: center;
+    
+}
+/*aqui vamos a centrar el boton de inicio*/
+#BotonIniciar{
+     background-color: aqua;
+            text-align: center;
+            padding: 5%;
+            display: inline-flex;
+            padding: 2%;
+           margin-left: 45%;
+    
+}
+/*aqui en la segunda pagina vamos poner en el izquierdo los numeros de intentos*/ 
+#intentos2{
+    text-align: center;
+    background-color: blue;
+    border-radius: 110px;
+    border-style: solid;
+    border-width: 10px;
+    height: 200px;
+    left: 10px;
+    position: absolute;
+    top: 150px;
+    width: 150px;
+}
+#juego{
+     background-color: aqua;
+            text-align: center;
+
+}
